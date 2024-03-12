@@ -17,7 +17,7 @@
   <body>
     <header class="container d-flex justify-content-between align-items-center">
         <a href="https://geolab.edu.ge/" class="col-sm-4 header-logo"> FASCO </a>
-          <nav class="d-flex">
+          <nav class="d-flex d-none d-sm-block">
             <ul class="d-flex nav-list">
               <li>
                 <a class="nav-a" href="#">Home</a>
@@ -37,12 +37,43 @@
               <button class="btn btn-dark">Sign up</button>
             </ul>
           </nav>
+          <div class="burger-menu" onclick="togglemenu()">
+            <div class="burger">
+              <div class="line"><!--content in css--></div>
+              <div class="line"><!--content in css--></div>
+              <div class="line"><!--content in css--></div>
+            </div>
+          </div>
     </header>
     <main>
+      <section class="menu" id="menu">
+        <div class="menu-content d-flex justify-content-center">
+          <div class="d-flex flex-column align-items-center gap-5">
+            <ul class="d-flex flex-column align-items-center gap-3">
+              <li>
+                <a class="menu-link" href="#">Home</a>
+              </li>
+              <li>
+                <a class="menu-link" href="#">Deals</a>
+              </li>
+              <li>
+                <a class="menu-link" href="#">New arrivals </a>
+              </li>
+              <li>
+                <a class="menu-link" href="#">Packages</a>
+              </li>
+              <li>
+                <a class="menu-link" href="#">Sign in</a>
+              </li>
+            </ul>
+            <button class="btn btn-dark menu-btn">Sign Up</button>
+          </div>
+        </div>
+      </section>
       <section class="container">
         <div class="hero">
           <div class="row">
-            <div class="col-4">
+            <div class="col-4 d-none d-lg-block">
               <div class="hero-div">
                 <img src="images/Man.png" alt="Man" />
               </div>
@@ -63,7 +94,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 d-none d-lg-block">
               <div class="hero-div">
                 <img src="images/handsome.png" alt="man" />
               </div>
@@ -226,7 +257,7 @@
                   </div>
                 </div>
               </div>
-              <div class=" col-4">
+              <div class=" col-4 d-none d-md-block">
                 <div class="card">
                   <div class="card-img">
                     <img src="images/knit-dress.svg" alt="knit-dress" />
@@ -309,7 +340,7 @@
                   </div>
                 </div>
               </div>
-              <div class=" col-4">
+              <div class=" col-4 d-none d-md-block">
                 <div class="card">
                   <div class="card-img">
                     <img src="images/woman-white-sweater.svg" alt="woman-white-sweater" />
@@ -417,6 +448,7 @@
       </div>
       <div class="copyright">
         <p>Copyright © 2022 FASCO . All Rights Reseved.</p>
+      </div>
       </div>
     </footer>
     <script
