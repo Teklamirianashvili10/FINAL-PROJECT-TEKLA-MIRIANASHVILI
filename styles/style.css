@@ -108,11 +108,20 @@ header {
           justify-content: space-between;
 }
 .women-div {
-  width: 426px;
+  max-width: 426px;
+  width: 100%;
   height: 150px;
   background-color: #e0e0e0;
   border-radius: 10px;
   padding-top: 5px;
+}
+.women-div-pink{
+  max-width: 426px;
+  width: 100%;
+}
+.women-div-pink img{
+  max-width: 426px;
+  width: 100%;
 }
 .hero-text {
   display: -webkit-box;
@@ -166,13 +175,10 @@ header {
   padding: 20px 60px;
 }
 .logos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 126px 0px;
+  width: 100%;
 }
 .deals {
   display: -webkit-box;
